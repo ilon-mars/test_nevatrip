@@ -1,0 +1,70 @@
+@media ( max-width: 480px )
+  .desktop-cards
+    display: none
+  .mobile-cards
+    display: block
+  .container
+    width: 340px
+  .card
+    flex-direction: column
+    margin-bottom: 30px
+    width: 340px
+    &:first-child
+      margin-top: 26px
+    &-image
+      width: 100%
+      margin-right: 0
+      margin-bottom: 14px
+    &-content
+      padding: 0 12px
+      padding-bottom: 20px
+    .title
+      font-weight: 600
+      font-size: 14px
+      line-height: 22px
+      color: #404040
+    .duration
+      order: -1
+    .list
+      margin-bottom: 35px
+      &-item
+        margin-left: 36px
+        position: relative
+        font-size: 14px
+        line-height: 20px
+        color: #4B4B4B
+        &::last-child
+          display: block
+        &::before
+          left: -36px
+          top: 4px
+          transform: translateY(0)
+    .info
+      &-price
+        margin-right: auto
+        .price
+          &-pier
+            font-size: 10px
+            line-height: 20px
+
+    .label
+      padding: 9px 18px
+      &-yellow
+        height: 35px
+      &-purple
+        padding: 12px 27px
+    .time-list
+      display: flex
+      list-style: none
+      margin-left: -36px
+      margin-top: 7px
+      &-record, .show-more
+        padding: 4px 13px
+        font-size: 14px
+        background: #D9E8FF
+    .details
+      border: 0.5px solid #CBA500
+      border-radius: 20px
+      font-size: 14px
+      line-height: 20px
+      color: #404040

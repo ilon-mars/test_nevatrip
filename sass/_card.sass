@@ -1,0 +1,130 @@
+.card
+  display: flex
+  position: relative
+  border: 0.3px solid #828282
+  box-sizing: border-box
+  border-radius: 16px
+  width: 1100px
+  overflow: hidden
+  margin-bottom: 60px
+  &:first-child
+    margin-top: 67px
+  &-image
+    width: 473px
+    margin-right: 22px
+    flex-shrink: 0
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &-content
+    display: flex
+    flex-direction: column
+    padding-top: 16px
+    padding-left: 23px
+    padding-bottom: 26px
+    .title
+      font-size: 26px
+      line-height: 34px
+      color: #000000
+      margin-bottom: 14px
+    .duration
+      font-size: 14px
+      line-height: 20px
+      color: #9E9E9E
+      position: relative
+      margin-left: 22px
+      margin-bottom: 10px
+      &::before
+        content: ''
+        position: absolute
+        width: 16px
+        height: 16px
+        top: 50%
+        transform: translateY(-50%)
+        left: -22px
+        background: url('../img/clock.svg') no-repeat center center
+    .list
+      list-style: none
+      margin-bottom: 20px
+      &-item
+        margin-left: 30px
+        position: relative
+        margin-bottom: 11px
+        font-size: 18px
+        line-height: 20px
+        color: #343434
+        &::last-child
+          display: inline-block
+        &::before
+          content: ''
+          position: absolute
+          width: 16px
+          height: 16px
+          top: 4px
+          left: -30px
+          background: url('../img/check-mark.svg') no-repeat center center
+    .info
+      display: flex
+      align-items: center
+      &-price
+        margin-right: 10px
+        color: #000000
+        .price
+          font-size: 36px
+          line-height: 20px
+          &-pier
+            font-size: 14px
+            line-height: 20px
+            margin-top: 10px
+
+  .label
+    position: absolute
+    text-transform: uppercase
+    padding: 13px 35px
+    font-weight: 600
+    height: 42px
+    &-yellow
+      top: 40px
+      left: 0
+      background: #FED74B
+      color: #3E3E3E
+    &-purple
+      background: #7553FF
+      border-radius: 15px 0px 12px
+      color: #fff
+      padding: 12px 27px
+    &-blue
+      top: 40px
+      left: 0
+      background: #099CE8
+      color: #fff
+  .time-list
+    display: inline-flex
+    flex-wrap: wrap
+    list-style: none
+    &-record, .show-more
+      background: #C5DCFF
+      border-radius: 11px
+      font-size: 16px
+      line-height: 20px
+      color: #343434
+      padding: 4px 16px
+      margin-right: 6px
+      margin-top: 10px
+      border: none
+      &:nth-child(n+5)
+        display: none
+      &:hover
+        background: #6BA6FF
+        box-shadow: 0px 2px 4px rgba(126, 104, 104, 0.25)
+        color: #fff
+        cursor: pointer
+.details
+  border: none
+  font-size: 18px
+  line-height: 20px
+  color: #292929
+  padding: 16px 42px
+  background: #FFD83C
+  border-radius: 23px
